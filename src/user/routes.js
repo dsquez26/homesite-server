@@ -4,7 +4,8 @@ const controller = require('./controller')
 const router = Router();
 
 
-router.get("/", controller.getUsers)
+router.get("/", controller.getNewUsers)
+router.get("/:id", controller.getNewUsersById)
 
 
 
